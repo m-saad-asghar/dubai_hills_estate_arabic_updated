@@ -89,7 +89,7 @@ export default function Contact() {
         formData.phone = phone;
 
         const payload_email = {
-            LANDING_PAGE: "صفحة دبي كريك هاربر (إنجليزي)",
+            LANDING_PAGE: "Dubai Creek Harbour AR Landing Page",
             ORIGIN: originValue,
             COUNTRY: countryValue,
             NAME: formData.name,
@@ -103,7 +103,7 @@ export default function Contact() {
 
         const payload = {
             fields: {
-                TITLE: `صفحة دبي كريك هاربر (إنجليزي)`,
+                TITLE: `Dubai Creek Harbour AR Landing Page`,
                 UF_CRM_1760777561731: originValue,
                 NAME: formData.name,
                 PHONE_TEXT: formData.phone,
@@ -122,7 +122,7 @@ export default function Contact() {
                 SOURCE_DESCRIPTION: formData.message,
                 SOURCE_ID: "WEB",
                 ASSIGNED_BY_ID: 25,
-                UF_CRM_1754652292782: "صفحة دبي كريك هاربر (إنجليزي)",
+                UF_CRM_1754652292782: "Dubai Creek Harbour AR Landing Page",
                 UF_CRM_1761206533: countryValue,
                 UF_CRM_1761918592: formData.country_of_residence,
                 UF_CRM_1761918627: formData.bedrooms,
