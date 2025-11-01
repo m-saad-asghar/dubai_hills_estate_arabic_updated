@@ -1,0 +1,81 @@
+'use client'
+import { useState } from 'react'
+import ReactCurvedText from 'react-curved-text'
+import ModalVideo from 'react-modal-video'
+import React from 'react';
+import Link from "next/link"
+import { Autoplay, Navigation, Pagination } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+
+const swiperOptions = {
+    modules: [Autoplay, Pagination, Navigation],
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: false,
+    loop: true,
+    navigation: {
+        nextEl: '.h1n',
+        prevEl: '.h1p',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+}
+
+export default function Banner() {
+    const [isOpen, setOpen] = useState(false)
+  return (
+    <>
+    
+    <section className="main-slider main-slider-one" id="home" dir='rtl'>
+      <Swiper {...swiperOptions} className="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none">                    
+        <SwiperSlide className="swiper-slide" style={{height: "100vh"}}>
+          <div className="image-layer" style={{backgroundImage: 'url(assets/img/slider/emaar_img_2.jpg)'}}>
+            </div>
+            {/* <div className="shape1"><img src="url(assets/img/slider/emaar_img_2.jpg)" alt=""/></div> */}
+            <div className="container main_wrapper">
+                <div className="main-slider-one__single">
+                    <div className="main-slider-one__content">
+                        <div className='banner_text_container'>
+         <div>
+             <p className='small_heading' style={{lineHeight: "1.2"}}>خـــور دبـــي</p>
+          <h3 style={{lineHeight: "1.2"}} className='main_heading_margin'>
+  منازل فاخرة تبدأ من <span className="line-break">1.79 مليون درهم إماراتي*</span>
+</h3>
+         </div>
+
+        <p className="down_styling" style={{lineHeight: "1.5"}}>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي.</p>
+  <div className='resp_usd'>
+        <p className="down_styling" style={{lineHeight: "1.5"}}>
+*463,000 دولار أمريكي / 398,000 يورو / <span className="line-break-other">344,000 جنيه إسترليني</span>
+</p>
+
+      </div>
+        </div>
+                        {/* <h3>Creative</h3> */}
+                        {/* <h2>Architecture</h2> */}
+                        <div className="btn-box">
+                            <div className="btn-one">
+                                <Link className="thm-btn" href="#contact-form">
+                                    <span className="txt">سجل اهتمامك</span>
+                                </Link>
+                            </div>
+                        </div>
+                        {/* <div className="contact-info">
+                        </div> */}
+                    </div>
+
+                   
+                </div>
+            </div>
+        </SwiperSlide>
+        <div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets" id="main-slider-one__pagination"><span className="swiper-pagination-bullet swiper-pagination-bullet-active"  role="button" aria-label="Go to slide 1"></span><span className="swiper-pagination-bullet" role="button" aria-label="Go to slide 2"></span><span className="swiper-pagination-bullet" role="button" aria-label="Go to slide 3"></span></div>
+      </Swiper>
+    </section>
+    {/* <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="vfhzo499OeA" onClose={() => setOpen(false)} /> */}
+    </>
+  );
+};
+
