@@ -9,7 +9,7 @@ export default function Projects() {
     return (
         <>
             {/*Start Service One */}
-        <section className="why-one" id="why-choose-emaar" dir="rtl">
+        <section className="why-one" id="why-emaar" dir="rtl">
             {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
             </div> */}
             <div className="container">
