@@ -46,7 +46,7 @@ export default function Banner() {
 </h3>
          </div>
 
-        <p className="down_styling" style={{lineHeight: "1.5"}}>امتلك منزلاً فاخراً ابتداءً من  1.79مليون درهم إماراتي*.</p>
+        <p className="down_styling" style={{lineHeight: "1.5"}}>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي.</p>
   <div className='resp_usd'>
         <p className="down_styling" style={{lineHeight: "1.5"}}>
 *488,000 دولار أمريكي / 423,000 يورو / <span className="line-break-other">371,000 جنيه إسترليني</span>

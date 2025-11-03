@@ -96,16 +96,16 @@ export default function ThankYou() {
     </div>
      {/* ✅ Google Analytics Event Script */}
      <Script id="lead-submission-dch-ar" strategy="afterInteractive">
-      {`
-        window.gtag('event', 'lead_submission_dch_ar', {
-          lead_language: 'arabic',
-          project_name: 'dubai_creek_harbour',
-          landing_page: 'dch_ar',
-          currency: 'AED',
-          value: 100
-        });
-      `}
-    </Script>
+  {`
+    window.gtag('event', 'lead_dch_ar', {
+      lead_language: 'arabic',
+      project_name: 'dubai_creek_harbour',
+      landing_page: 'dch_ar',
+      currency: 'AED',
+      value: 2
+    });
+  `}
+</Script>
       </>
   );
 }

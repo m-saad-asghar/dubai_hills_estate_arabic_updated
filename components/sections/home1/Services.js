@@ -200,7 +200,7 @@ export default function Pricing() {
                         <div className="btn-box">
                             <div className="btn-one">
                                 <Link className="thm-btn" href="#contact-form">
-                                    <span className="txt">تسجيل الاهتمام</span>
+                                    <span className="txt">سجل اهتمامك</span>
                                 </Link>
                             </div>
                         </div>
