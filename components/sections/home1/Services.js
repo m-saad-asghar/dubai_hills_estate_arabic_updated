@@ -25,8 +25,8 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>عوائد إيجارية مرتفعة</h2>
-                                    <p>عوائد سنوية بنسبة 5–9٪.</p>
+                                    <h2 style={{color: "#ffffff"}}>عوائد إيجارية عالية</h2>
+                                    <p>نسبة ربح تصل إلى 5–9% سنويا.</p>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>عقارات فاخرة بتكلفة منخفضة</h2>
+                                    <h2 style={{color: "#ffffff"}}>عقارات فاخرة بتكلفة أقل</h2>
                                     <p>فخامة بأسعار تنافسية.</p>
                                 </div>
                             </div>
@@ -61,8 +61,8 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>ملكية خالية من الضرائب</h2>
-                                    <p>لا توجد ضرائب عقارية أبداً.</p>
+                                    <h2 style={{color: "#ffffff"}}>ملكية معفاة من الضرائب</h2>
+                                    <p> ًلا توجد أي ضرائب على العقار أبد.</p>
                                 </div>
                             </div>
                         </div>
@@ -79,8 +79,8 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>سهولة الوصول العالمية</h2>
-                                    <p>رحلات مباشرة إلى المدن الكبرى.</p>
+                                    <h2 style={{color: "#ffffff"}}>سهولة الوصول عالمياً</h2>
+                                    <p>وصل مباشر إلى أبرز المدن العالمية.</p>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>السياحة ونمط الحياة</h2>
+                                    <h2 style={{color: "#ffffff"}}>السياحة وأسلوب الحياة</h2>
                                     <p>الشواطئ، المولات، المعالم السياحية والفنادق.</p>
                                 </div>
                             </div>
@@ -115,8 +115,8 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>آمنة وصديقة للعائلة</h2>
-                                    <p>واحدة من أكثر المدن أماناً في العالم.</p>
+                                    <h2 style={{color: "#ffffff"}}>آمنة ومناسبة للعائلات</h2>
+                                    <p>إحدى أكثر المدن أماناً في العالم.</p>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ export default function Pricing() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>مركز للأعمال والتجارة</h2>
-                                    <p>جاذبة للمستثمرين العالميين.</p>
+                                    <p>جاذب للمستثمرين العالميين.</p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>تأشيرة ذهبية للإمارات</h2>
+                                    <h2 style={{color: "#ffffff"}}>الإقامة الذهبية</h2>
                                     <p>تأشيرات ذهبية وخضراء للمستثمرين.</p>
                                 </div>
                             </div>
@@ -169,8 +169,8 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2 style={{color: "#ffffff"}}>مدينة مستقبلية جاهزة</h2>
-                                    <p>التركيز على التكنولوجيا والطاقة الخضراء والصحة والتعليم.</p>
+                                    <h2 style={{color: "#ffffff"}}>مدينة جاهزة للمستقبل</h2>
+                                    <p>التركيز على الابتكار في التكنولوجيا، الطاقة المستدامة، الرعاية الصحية والتعليم.</p>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +188,7 @@ export default function Pricing() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>مكافآت حصرية من إعمار</h2>
-                                    <p>مزايا بلاتينية وذهبية للمستثمرين ذوي القيمة العالية.</p>
+                                    <p>مزايا بلاتينية وذهبية للمستثمرين المميزين.</p>
                                 </div>
                             </div>
                         </div>
