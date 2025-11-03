@@ -272,17 +272,9 @@ export default function Contact() {
                                                         </label>
                                                         <select name="bedrooms" value={formData.bedrooms} onChange={handleChange} required style={{height: 60}}>
                                                             <option value="">اختر عدد الغرف</option>
-                                                            <option value="Studio">استوديو</option>
                                                             <option value="1 Bedroom">غرفة نوم واحدة</option>
                                                             <option value="2 Bedrooms">غرفتان</option>
                                                             <option value="3 Bedrooms">3 غرف نوم</option>
-                                                            <option value="4 Bedrooms">4 غرف نوم</option>
-                                                            <option value="5 Bedrooms">5 غرف نوم</option>
-                                                            <option value="6 Bedrooms">6 غرف نوم</option>
-                                                            <option value="7 Bedrooms">7 غرف نوم</option>
-                                                            <option value="7+ Bedrooms">أكثر من 7 غرف</option>
-                                                            <option value="Townhouse">تاون هاوس</option>
-                                                            <option value="Penthouse">بنتهاوس</option>
                                                         </select>
                                                     </div>
                                                 </div>

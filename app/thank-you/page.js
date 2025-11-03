@@ -60,7 +60,7 @@ export default function ThankYou() {
             color: '#0b4a35',
           }}
         >
-          Thank You for Your Interest!
+          شكراً لاهتمامك!
         </h1>
         <p
           style={{
@@ -69,7 +69,7 @@ export default function ThankYou() {
             color: '#0b4a35',
           }}
         >
-          We will get back to you very soon.
+          سوف نتواصل معك قريباً جداً
         </p>
 
         {/* Progress Bar */}

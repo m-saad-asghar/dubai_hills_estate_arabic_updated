@@ -25,7 +25,7 @@ export default function About() {
                                     {/* <div className="sub-title">
                                         <h5>About Company</h5>
                                     </div> */}
-                                    <h2>مرحبًا بكم في دبي كريك هاربور</h2>
+                                    <h2>مرحبًا بكم في خور دبي</h2>
                                 </div>
 
                                 <div className="text-box">
