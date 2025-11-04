@@ -19,7 +19,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                                     <div className="main-header-one__inner" style={{width: "100%"}}>
                                         <div className="main-header-one__left" style={{width: "100%"}}>
                                             <div className="logo-box logo_align">
-                                               <Link href="/" passHref>
+                                               <Link href="https://www.shiroestate.ae/" passHref>
   <Image
     src="/assets/icon/emaar_logo.png"
     alt="emaar_logo"
@@ -28,7 +28,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
     className="emaar_logo"
   />
 </Link>
- <Link href="/" passHref>
+ <Link href="https://www.shiroestate.ae/" target="_blank" passHref>
   <Image
     src="/assets/img/shiro_images/logo.png"
     alt="shiro_logo"
