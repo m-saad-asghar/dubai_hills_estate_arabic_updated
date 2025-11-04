@@ -197,7 +197,7 @@ export default function Contact() {
                             <div className="container">
                                 <div className="contact-two__inner">
                                     <div className="title-box">
-                                        <h2 style={{ color: "#ffffff" }}>تواصل معنا</h2>
+                                        <h2 style={{ color: "#ffffff" }}>تحدث إلى أحد مستشاري العقارات لدينا</h2>
                                         <p style={{ color: "#ffffff" }}>الحقول المطلوبة مُشار إليها بـ *</p>
                                     </div>
                                     <div className="contact-two__inner-box">
