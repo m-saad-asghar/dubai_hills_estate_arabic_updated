@@ -238,6 +238,11 @@ h6 {
     font-size: 1rem;
 }
 
+.spacing_ending {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
 .about_image {
     height: 100% !important;
 }

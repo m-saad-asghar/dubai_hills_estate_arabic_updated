@@ -9,7 +9,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
             <header className={`main-header main-header-one container ${scroll ? "" : ""}`} dir="rtl">
                 <div className={`menu-area ${scroll ? "sticky-menu" : ""}`}>
                     {/* header-lower */}
-                    <div className="container">
+                    <div style={{paddingLeft: 0, paddingRight: 0}} className={`menu-area ${scroll ? "spacing_ending" : ""} container`}>
                         <div className="menu-area__inner">
                             <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
                                 {/* <i className="fas fa-bars"></i> */}
