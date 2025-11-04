@@ -81,7 +81,7 @@ export default function ChooseEmaar() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>12+</h2>
-                                    <p>دول — حضور عالمي حقيقي.</p>
+                                    <p>دولة — حضور عالمي حقيقي.</p>
                                 </div>
                             </div>
                         </div>

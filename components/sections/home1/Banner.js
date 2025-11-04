@@ -42,7 +42,7 @@ export default function Banner() {
          <div>
              <p className='small_heading' style={{lineHeight: "1.2"}}>خـــور دبـــي</p>
           <h3 style={{lineHeight: "1.2"}} className='main_heading_margin'>
-  منازل فاخرة تبدأ من <span className="line-break">1.79 مليون درهم إماراتي*</span>
+  امتلك منزلاً فاخراً ابتداءً من<span className="line-break">1.79مليون درهم إماراتي*</span>
 </h3>
          </div>
 

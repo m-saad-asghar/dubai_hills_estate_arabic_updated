@@ -62,7 +62,7 @@ export default function Pricing() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>ملكية معفاة من الضرائب</h2>
-                                    <p> ًلا توجد أي ضرائب على العقار أبد.</p>
+                                    <p> لا توجد أي ضرائب على العقار.</p>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function Pricing() {
                                 </div>
                                 <div className="content-box">
                                     <h2 style={{color: "#ffffff"}}>سهولة الوصول عالمياً</h2>
-                                    <p>وصل مباشر إلى أبرز المدن العالمية.</p>
+                                    <p>وصول مباشر إلى أبرز المدن العالمية.</p>
                                 </div>
                             </div>
                         </div>
