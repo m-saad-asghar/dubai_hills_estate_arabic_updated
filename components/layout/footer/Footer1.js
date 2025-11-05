@@ -37,7 +37,7 @@ export default function Footer1() {
 
                                      <div className="footer-widget__about-inner footer_spacing privacy_policy_footer centerize" style={{marginTop: 0}}>
                                         <div className="number-box centerize">
-                                            <span style={{color: "#ffffff"}}>&copy; شيرو إستيت {currentYear}. جميع الحقوق محفوظة.</span>
+                                            <span style={{color: "#ffffff"}}>&copy; شيرو استيت {currentYear}. جميع الحقوق محفوظة.</span>
                                         </div>
                                     </div>
                                 </div>
