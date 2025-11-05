@@ -6639,8 +6639,8 @@ Project Four Css
         margin-top: 20px;
     }
     .centerize {
-        display: flex;
-        justify-content: center;
+        display: flex !important; 
+        justify-content: center !important;
     }
 
 	.about-one__content-bottom-author-box {
