@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTiktok, FaSnapchatGhost, FaTwitter } from "react-icons/fa";
 
 export default function Footer1() {
+        const currentYear = new Date().getFullYear();
     return (
         <>
             <footer className="footer-one" id="footer" dir="rtl">
@@ -12,20 +13,31 @@ export default function Footer1() {
                             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp centerize" data-wow-delay=".1s">
                                 <div className="single-footer-widget footer-widget__about">
                                     <div className="logo-box centerize">
-                                        <Link href="https://www.shiroestate.ae/" target="_blank" passHref>
   <Image
     src="/assets/img/shiro_images/logo.png"
     alt="shiro_logo"
     height={30}
     width={300}
-    style={{ height: "50px", width: "auto" }}
+    style={{ height: "50px", width: "auto", cursor: "pointer" }}
   />
-</Link>
                                     </div>
 
                                     <div className="footer-widget__about-inner footer_spacing privacy_policy_footer centerize">
                                         <div className="number-box centerize">
                                             <Link href="https://www.shiroestate.ae/privacy-policy" target="_blank" style={{color: "#ffffff"}}>سياسة الخصوصية</Link>
+                                        </div>
+                                    </div>
+                                    <div className="footer-widget__about-inner footer_spacing privacy_policy_footer centerize" style={{marginTop: 0}}>
+                                        <div className="number-box centerize">
+                                            <span style={{color: "#ffffff"}}>رقم الرخصة: 1447657</span>
+                                            <span style={{color: "#ffffff", marginLeft: 30, marginRight: 30}}>|</span>
+                                            <span style={{color: "#ffffff"}}>رقم ريرا: 47486</span>
+                                        </div>
+                                    </div>
+
+                                     <div className="footer-widget__about-inner footer_spacing privacy_policy_footer centerize" style={{marginTop: 0}}>
+                                        <div className="number-box centerize">
+                                            <span style={{color: "#ffffff"}}>&copy; شيرو إستيت {currentYear}. جميع الحقوق محفوظة.</span>
                                         </div>
                                     </div>
                                 </div>
