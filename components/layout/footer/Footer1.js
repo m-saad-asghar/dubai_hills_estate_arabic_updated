@@ -44,7 +44,7 @@ export default function Footer1() {
                             </div>
 
                             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp qr_container centerize aligment_of_qr_code" data-wow-delay=".2s">
-                                <div className="single-footer-widget footer-widget__links footer_address">
+                                <div className="single-footer-widget footer-widget__links footer_address qr_code_centerize">
                                     <Image
     src="/assets/logo/dubai_creek_harbour.png"
     alt="qr_code"

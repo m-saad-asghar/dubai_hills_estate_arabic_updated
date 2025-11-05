@@ -168,6 +168,13 @@ textarea:focus {
     text-transform: uppercase;
 }
 
+.qr_code_centerize {
+    display: flex;
+    align-items: center;
+}
+
+
+
 .capitalize {
     text-transform: capitalize;
 }
