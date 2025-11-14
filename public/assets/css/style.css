@@ -233,6 +233,10 @@ h3 {
     font-size: 1.75rem;
 }
 
+.captcha_container {
+    margin-top: 30px;
+}
+
 h4 {
     font-size: 1.5rem;
 }
@@ -6545,6 +6549,10 @@ Project Four Css
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+     /* .captcha_container {
+    margin-top: 30px;
+} */
 
     .future_container {
     margin-bottom: 70px;

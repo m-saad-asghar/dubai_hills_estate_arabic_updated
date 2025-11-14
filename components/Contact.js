@@ -1,9 +1,10 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PhoneInput, { isPossiblePhoneNumber } from "react-phone-input-2";
 import 'react-phone-input-2/lib/style.css';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
     const router = useRouter();
@@ -24,6 +25,11 @@ export default function Contact() {
     const searchParams = useSearchParams();
     const [countryValue, setCountryValue] = useState('');
     const [originValue, setOriginValue] = useState('');
+    // 🔐 reCAPTCHA for THIS component only
+    const recaptchaRef = useRef(null);
+    const [captchaToken, setCaptchaToken] = useState(null);
+    const [captchaError, setCaptchaError] = useState('');
+
 
     useEffect(() => {
         const origin = searchParams.get('origin');
@@ -59,6 +65,14 @@ export default function Contact() {
         });
     };
 
+    // ✅ reCAPTCHA handler for THIS form
+    const handleCaptchaChange = (token) => {
+        setCaptchaToken(token);
+        if (token) {
+            setCaptchaError('');
+        }
+    };
+
     const handlePhoneChange = (value, data, event, formattedValue) => {
         setFormData({
             ...formData,
@@ -74,6 +88,12 @@ export default function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+         // ✅ Check captcha FIRST
+        if (!captchaToken) {
+            setCaptchaError("يرجى التحقق من أنك لست روبوتاً.");
+            return;
+        }
 
         if (!formData.phone) {
             setPhoneError("رقم الهاتف مطلوب");
@@ -167,6 +187,13 @@ export default function Contact() {
 
             if (result.result) {
                 router.push('/thank-you');
+                // Reset form
+                // Reset this form's captcha only
+                setCaptchaToken(null);
+                if (recaptchaRef.current) {
+                    recaptchaRef.current.reset();
+                }
+                 await sendLeadEmail();
                 setFormData({
                     name: '',
                     phone: '',
@@ -176,7 +203,6 @@ export default function Contact() {
                     duration: '',
                     purpose: '',
                 });
-                await sendLeadEmail();
             } else {
                 setDisableBtn(false);
                 toast.error("حدث خطأ ما. يرجى المحاولة مرة أخرى.", { duration: 5000 });
@@ -319,7 +345,7 @@ export default function Contact() {
                                                         </button>
                                                     </div>
 
-                                                    {submitMessage && (
+                                                    {/* {submitMessage && (
                                                         <div style={{
                                                             marginTop: '15px',
                                                             padding: '10px',
@@ -330,7 +356,23 @@ export default function Contact() {
                                                         }}>
                                                             {submitMessage}
                                                         </div>
-                                                    )}
+                                                    )} */}
+                                                </div>
+                                                <div className='row'>
+  <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 captcha_container">
+                                                   <div>
+                                                        <ReCAPTCHA
+                                                            ref={recaptchaRef}
+                                                            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                                                            onChange={handleCaptchaChange}
+                                                        />
+                                                        {captchaError && (
+                                                            <p style={{ color: 'red', fontSize: '14px', marginTop: '5px' }}>
+                                                                {captchaError}
+                                                            </p>
+                                                        )}
+                                                    </div>
+                                                </div>
                                                 </div>
                                             </div>
                                         </form>
